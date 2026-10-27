@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10091e">
+  <title>Kohili — A Birthday Story from Monaem</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen text-white">
+  <audio id="music" src="/yaar hoon main.mp3" loop preload="auto"></audio>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="nav">
+    <a class="brand" href="#home">Happy<span>♥</span>Birthday</a>
+    <div class="nav-right">
+      <span class="live-dot"></span><span class="now-playing">A little story for Kohili</span>
+      <button id="musicBtn" class="glass-btn" aria-label="Play or pause music">♫ Music Off</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <h1 class="reveal delay-1">Happy Birthday<br><span>Kohili</span><b> ♡</b></h1>
+        <p class="lead reveal delay-2">আজকের দিনটা শুধু তোমার। তোমার হাসি, স্বপ্ন আর আগামীর প্রতিটি দিন সুন্দর হোক। 💗</p>
+        <button id="startBtn" class="primary reveal delay-3">▶ হৃদয়ে হাত রাখো</button>
+        <p class="signature">A small world, made just for you — <strong>Monaem</strong> ✨</p>
+      </div>
+      <div class="hero-visual">
+        <img src="/k.png" alt="Anime birthday portrait for Kohili">
+        <div class="hero-glow"></div>
+        <div class="hero-sticker">Birthday girl<br><strong>Kohili ♡</strong></div>
+        <span class="orbit orbit-one">♡</span><span class="orbit orbit-two">✦</span>
+      </div>
+    </section>
+
+    <section id="movie" class="movie-section">
+      <div class="section-heading">
+        <p class="eyebrow">THE BIRTHDAY MOVIE</p>
+        <h2>One special day<span> 🤍 thousand heartfelt wishes </span></h2>
+        <p>গল্পটা শুধু তোমার জন্য 🎬</p>
+      </div>
+
+      <div class="movie-shell">
+        <div class="movie-topbar">
+          <div id="sceneCount">SCENE 01 / 05</div>
+        </div>
+
+        <div id="movieFrame" class="movie-frame">
+          <div class="movie-backdrop"></div>
+          <img id="movieImage" class="movie-image" src="images/scene1-arrival.jpg" alt="Anime birthday scene">
+          <div class="cinema-shade"></div>
+          <div id="particles" class="particles" aria-hidden="true"></div>
+
+          <div class="movie-caption">
+            <p id="sceneKicker" class="caption-kicker">CHAPTER 01 · THE ARRIVAL</p>
+            <h3 id="sceneTitle">Then, you walked in…</h3>
+            <p id="sceneText">surprise-এর দিকে এগিয়ে এলো Kohili। 💗</p>
+          </div>
+
+          <div id="actionFx" class="action-fx" aria-hidden="true"></div>
+          <div id="movieEnd" class="movie-end hidden">
+            <div class="end-heart">♥</div>
+            <p>THE END? NEVER.</p>
+            <h3>Happy Birthday, Kohili!</h3>
+            <span>With love, Monaem ♡</span>
+          </div>
+          <div id="playPauseOverlay" class="play-pause-overlay hidden">Ⅱ</div>
+        </div>
+
+        <div class="timeline-wrap">
+          <div class="timeline"><div id="timelineFill"></div></div>
+          <div class="timeline-labels"><span id="timeNow">00:00</span><span>00:25</span></div>
+        </div>
+
+        <div class="movie-controls">
+          <button id="restartBtn" class="control-btn">↺ Restart</button>
+          <button id="playBtn" class="primary play-btn">▶ Play movie</button>
+          <button id="soundBtn" class="control-btn">♡ Little notes</button>
+        </div>
+      </div>
+
+      <div class="chapters" id="chapters">
+        <button class="chapter active" data-index="0"><span>01</span><div><b>The arrival</b><small>একটা সুন্দর শুরু 🚶</small></div></button>
+        <button class="chapter" data-index="1"><span>02</span><div><b>Make a wish</b><small>চোখ বন্ধ করো 🕯️</small></div></button>
+        <button class="chapter" data-index="2"><span>03</span><div><b>Cake cutting</b><small>একসাথে এই মুহূর্ত 🎂</small></div></button>
+        <button class="chapter" data-index="3"><span>04</span><div><b>A sweet bite</b><small>তোমার জন্য এক টুকরো 🍰</small></div></button>
+        <button class="chapter" data-index="4"><span>05</span><div><b>Always wishing</b><small>শেষে শুধু দোয়া 🤲</small></div></button>
+      </div>
+    </section>
+
+    <section id="notes" class="notes-section">
+      <div class="section-heading">
+        <p class="eyebrow">TINY NOTES, BIG FEELINGS</p>
+        <h2>কিছু ছোট্ট কথা <span>তোমার জন্য</span> 💌</h2>
+        <p>সব কথা বড় করে বলতে হয় না। কিছু কথা ছোট্ট হলেই সুন্দর।</p>
+      </div>
+      <div class="note-grid">
+        <article class="note-card"><span>🌷</span><h3>হাসতে থেকো</h3><p>তোমার হাসিটা সবসময় এমনই সুন্দর থাকুক।</p></article>
+        <article class="note-card"><span>🌙</span><h3>স্বপ্ন দেখো</h3><p>তোমার প্রতিটি স্বপ্ন একদিন সত্যি হোক।</p></article>
+        <article class="note-card"><span>🤲</span><h3>অনেক দোয়া</h3><p>আল্লাহ তোমাকে সুখ, শান্তি ও সুস্থতা দিন।</p></article>
+        <article class="note-card"><span>💗</span><h3>নিজের যত্ন নিও</h3><p>নিজের জন্যও একটু সময় রেখো, Kohili।</p></article>
+      </div>
+    </section>
+
+    <section class="letter-section">
+      <article class="letter">
+        <p class="eyebrow">A LETTER FOR YOU ✉</p>
+        <h2>শুভ জন্মদিন, Kohili!</h2>
+        <p>তোমার আগামী দিনগুলো হোক শান্তি, আনন্দ আর নতুন আশায় ভরা। তুমি যা কিছু ভালো চাও, আল্লাহ যেন তা তোমার জন্য সহজ করে দেন।</p>
+        <p>কঠিন সময়ে সাহস রেখো, ভালো সময়ে কৃতজ্ঞ থেকো, আর নিজের সুন্দর হাসিটা কখনো হারিয়ে ফেলো না। তোমার জন্য রইল মন থেকে অনেক দোয়া 🤍</p>
+        <p class="letter-sign"><strong>Monaem ♥</strong></p>
+      </article>
+      <div class="final-art">
+        <img src="images/scene5-ending.jpg" alt="Anime birthday ending illustration">
+        <div class="final-art-caption"><span>For you, Kohili</span><h3>Happy Birthday ♡</h3><p>May your heart always find reasons to smile.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer><span>BirthdayGirlKohili ♥</span>
+
+  <div id="noteToast" class="note-toast hidden" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
